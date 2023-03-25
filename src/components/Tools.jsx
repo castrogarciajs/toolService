@@ -5,6 +5,7 @@ export function Tools() {
   const query = useQuery({
     queryKey: ["tools"],
     queryFn: getTools,
+    select: data => data.sort((a, b) => b.id - a.id) 
   });
 
   if (query.isLoading) return <h2>loading...</h2>;

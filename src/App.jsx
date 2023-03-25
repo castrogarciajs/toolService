@@ -1,10 +1,12 @@
 import { Tools } from "./components/Tools";
+import { Tools_Form } from "./components/Tools_Form";
 
 function App() {
   return (
-    <div>
+    <>
+      <Tools_Form />
       <Tools />
-    </div>
+    </>
   );
 }
 
