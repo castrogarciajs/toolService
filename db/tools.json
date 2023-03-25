@@ -1,0 +1,39 @@
+{
+  "tools": [
+    {
+      "id": 1,
+      "name": "Git Hub Copilot",
+      "description": "Optimiza tu software",
+      "state": true,
+      "price": 13
+    },
+    {
+      "id": 2,
+      "name": "VS Code",
+      "description": "Editor de código fuente",
+      "state": true,
+      "price": 0
+    },
+    {
+      "id": 3,
+      "name": "Postman",
+      "description": "Herramienta para probar APIs",
+      "state": false,
+      "price": 99.99
+    },
+    {
+      "id": 4,
+      "name": "Docker",
+      "description": "Plataforma para desarrollar, enviar y ejecutar aplicaciones",
+      "state": true,
+      "price": 0
+    },
+    {
+      "id": 5,
+      "name": "Zoom",
+      "description": "Plataforma de videollamadas y conferencias en línea",
+      "state": true,
+      "price": 0
+    }
+  ]
+}
