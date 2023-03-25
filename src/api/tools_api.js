@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const tools = axios.create({
-  baseURL: "http://localhost:8080/tools",
+  baseURL: "https://server-tools-mu.vercel.app/api/tools",
 });
 
 export const getTools = async () => {
