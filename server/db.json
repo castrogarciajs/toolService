@@ -1,0 +1,18 @@
+{
+  "tools": [
+    {
+      "id": 1,
+      "name": "VS Code",
+      "description": "Editor de código fuente",
+      "state": false,
+      "price": 0
+    },
+    {
+      "id": 2,
+      "name": "Postman",
+      "description": "Herramienta para probar APIs",
+      "state": false,
+      "price": 99.99
+    }
+  ]
+}
