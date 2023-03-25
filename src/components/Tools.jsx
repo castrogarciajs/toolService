@@ -1,5 +1,5 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { getTools, deleteTool } from "../api/tools_api";
+import { getTools, deleteTool, updateTool } from "../api/tools_api";
 
 export function Tools() {
   const queryClient = useQueryClient();
@@ -13,6 +13,13 @@ export function Tools() {
     mutationFn: deleteTool,
     onSuccess: () => {
       queryClient.invalidateQueries("tools");
+    },
+  });
+
+  const toolUpdate = useMutation({
+    mutationFn: updateTool,
+    onSuccess: () => {
+      queryClient.invalidateQueries("tools")
     },
   });
   if (query.isLoading) return <h2>loading...</h2>;
@@ -32,8 +39,18 @@ export function Tools() {
           >
             delete
           </button>
-          <input type="checkbox" />
-          <label>Done</label>
+          <input
+            type="checkbox"
+            checked={tool.state}
+            id={tool.id}
+            onChange={(e) => {
+              toolUpdate.mutate({
+                ...tool,
+                state: e.target.checked,
+              });
+            }}
+          />
+          <label htmlFor={tool.id}>Done</label>
         </div>
       ))}
     </div>
