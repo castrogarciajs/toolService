@@ -1,7 +1,11 @@
+import { Tools } from "./components/Tools";
+
 function App() {
   return (
-    <div>App</div>
-  )
+    <div>
+      <Tools />
+    </div>
+  );
 }
 
-export default App
+export default App;
