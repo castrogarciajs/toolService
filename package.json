@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "serve": "json-server --watch ./db/tools.json --port 8080",
-    "prestart": "json-server --watch ./db/tools.json --port $PORT &"
+    "serve": "json-server --watch ./db/tools.json --port 8080"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.28.0",
