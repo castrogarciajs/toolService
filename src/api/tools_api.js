@@ -11,3 +11,5 @@ export const getTools = async () => {
 };
 
 export const createTool = async (tool) => await tools.post("/", tool);
+
+export const deleteTool = async (id) => await tools.delete(`/${id}`)
