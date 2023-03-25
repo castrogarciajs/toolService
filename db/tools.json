@@ -1,3 +1,11 @@
 {
-  "tools": []
+  "tools": [
+    {
+      "id": 2,
+      "name": "VS Code",
+      "description": "Editor de código fuente",
+      "state": false,
+      "price": 0
+    }
+  ]
 }

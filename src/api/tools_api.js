@@ -12,4 +12,6 @@ export const getTools = async () => {
 
 export const createTool = async (tool) => await tools.post("/", tool);
 
-export const deleteTool = async (id) => await tools.delete(`/${id}`)
+export const deleteTool = async (id) => await tools.delete(`/${id}`);
+
+export const updateTool = async (tool) => tools.put(`/${tool.id}`, tool);
